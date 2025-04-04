@@ -66,37 +66,40 @@ section h2 {
 
 /* Skills Section */
 #skills {
+    text-align: center; /* Centers the section title */
     padding: 20px;
-    text-align: center;
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of skill cards on smaller screens */
+    justify-content: center; /* Centers the skill cards horizontally */
+    gap: 20px; /* Adds spacing between the skill cards */
+    margin: 0 auto; /* Centers the container itself */
+    max-width: 800px; /* Optional: Limits the width of the container */
 }
 
 .skill-card {
     background: #007BFF; /* Blue background for visibility */
     color: #fff; /* White text for contrast */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 150px;
+    padding: 15px; /* Adds padding inside the cards */
+    border-radius: 10px; /* Rounds the corners of the cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the content inside each card */
+    width: 150px; /* Sets a fixed width for the cards */
 }
 
 .skill-card h3 {
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1rem; /* Adjusts the font size for the title */
 }
 
-.skill-card p {
-    margin: 0;
-    font-size: 1rem;
+.skill-card img {
+    margin: 5px; /* Adds spacing between the icons */
+    display: inline-block; /* Ensures icons are inline */
+    width: 50px; /* Sets a consistent size for the icons */
+    height: auto; /* Maintains the aspect ratio of the icons */
 }
-
 /* Education Section */
 #education {
     text-align: center;
@@ -113,6 +116,13 @@ section h2 {
 #projects {
     text-align: center;
     padding: 20px;
+}
+.project img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .project {
